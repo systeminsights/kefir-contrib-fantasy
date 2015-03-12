@@ -1,0 +1,34 @@
+{
+  "name": "kefir-contrib-fantasy",
+  "version": "0.0.1",
+  "description": "Kefir stream integration with fantasy-land data structures.",
+  "main": "lib/fantasy.js",
+  "scripts": {
+    "prepublish": "in-publish && (mkdir lib && coffee -cbo lib src) || in-install",
+    "postpublish": "rm -rf lib",
+    "test": "mocha --no-colors test/**/*-spec.coffee",
+    "watch": "mocha --no-colors --watch test/**/*-spec.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systeminsights/kefir-contrib-fantasy"
+  },
+  "keywords": [],
+  "author": "System Insights",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/systeminsights/kefir-contrib-fantasy/issues"
+  },
+  "homepage": "https://github.com/systeminsights/kefir-contrib-fantasy",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "coffee-script": "^1.9.1",
+    "fantasy-options": "0.0.1",
+    "in-publish": "^1.1.1",
+    "mocha": "^2.2.1"
+  },
+  "dependencies": {
+    "fantasy-eithers": "0.0.2",
+    "kefir": "^1.1.0"
+  }
+}
