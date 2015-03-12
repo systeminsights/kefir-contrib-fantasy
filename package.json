@@ -1,6 +1,6 @@
 {
   "name": "kefir-contrib-fantasy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Kefir stream integration with fantasy-land data structures.",
   "main": "lib/fantasy.js",
   "scripts": {
